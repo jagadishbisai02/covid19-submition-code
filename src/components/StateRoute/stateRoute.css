@@ -1,0 +1,155 @@
+.state-route-container {
+  max-width: 1440px;
+  background: #161625;
+}
+
+.state-container-district {
+  padding: 9px 35px;
+}
+
+.page-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.state-district-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.state-route-state-names {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.total-tested {
+  display: flex;
+  flex-direction: column;
+}
+
+.state-route-state-card-container {
+  width: 1055px;
+  @media screen and (max-width: 768px) {
+    width: 465px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.top-districts-unordered-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.state-district-header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0284c729;
+  width: auto;
+  height: 36px;
+  padding: 11px 22px;
+  border-radius: 32px;
+  @media screen and (max-width: 768px) {
+    height: 18px;
+    padding: 5px 11px;
+  }
+}
+
+.state-district-state-name {
+  font-family: HK Grotesk;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0ea5e9;
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.tested-name {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #94a3b8;
+  margin-bottom: 0px;
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.tested-number {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #94a3b8;
+  margin-top: 0px;
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.district-state-date {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #cbd5e1;
+  margin-top: 0px;
+  margin-left: 18px;
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+    line-height: 16px;
+    margin: 4px;
+  }
+}
+
+.top-district-header {
+  color: #ff073a;
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.state-route-chart-container {
+  width: auto;
+  @media screen and (max-width: 768px) {
+    width: auto;
+  }
+}
+
+.top-state-district {
+  width: auto;
+  height: auto;
+  @media screen and (max-width: 768px) {
+    height: auto;
+    padding: 25px;
+  }
+}

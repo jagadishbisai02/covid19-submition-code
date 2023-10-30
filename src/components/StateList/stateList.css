@@ -1,0 +1,76 @@
+.list-state-value {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link-class {
+  text-decoration: none;
+}
+.state-names {
+  width: 203px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #f1f5f9;
+}
+
+.state-confirm {
+  width: 57px;
+  height: 24px;
+  color: #ff073a;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+
+.state-active {
+  width: 57px;
+  height: 24px;
+  color: #007bff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+
+.state-recover {
+  width: 57px;
+  color: #28a745;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+
+.state-decease {
+  width: 57px;
+  color: #6c757d;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+
+.state-population {
+  width: 57px;
+  color: #94a3b8;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: right;
+}

@@ -1,0 +1,43 @@
+.top-districts {
+  height: auto;
+  width: 194px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 3px;
+}
+
+.top-district-number {
+  width: 69px;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #94a3b8;
+  padding-right: 5px;
+  @media screen and (max-width: 768px) {
+    width: 46px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.top-district-name {
+  width: 99px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #94a3b8;
+  padding-left: 5px;
+  @media screen and (max-width: 768px) {
+    width: 74px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+  }
+}

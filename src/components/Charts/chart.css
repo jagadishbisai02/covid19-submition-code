@@ -1,0 +1,129 @@
+.chart-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.charts-barChart {
+  width: 1032px;
+  height: 431px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    width: 278px;
+    height: 130px;
+    margin: auto;
+    padding: 0px 45px;
+  }
+}
+
+.charts-bargraph {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+}
+
+.charts-graphs-container {
+  width: 1146px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 312px;
+    height: auto;
+    margin-top: 95px;
+  }
+}
+
+.Charts-graph-heading {
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0em;
+  align-self: flex-start;
+  color: #cbd5e1;
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+    line-height: 32px;
+    align-self: center;
+  }
+}
+
+.line-chart-container {
+  width: 616px;
+  height: 328px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    width: 312px;
+    height: 251px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+.confirmed-graph-background {
+  background: #331427;
+}
+
+.active-graph-background {
+  background: #132240;
+}
+
+.recovered-graph-background {
+  background: #182829;
+}
+
+.deceased-graph-background {
+  background: #1c1c2b;
+}
+
+.tested-graph-background {
+  background: #230f41;
+}
+
+.charts-graph-list-margin {
+  margin: 14px;
+  border-radius: 6px;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.line-chart-graph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  @media screen and (max-width: 768px) {
+    width: 523px;
+    height: auto;
+  }
+}

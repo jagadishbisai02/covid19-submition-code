@@ -1,0 +1,43 @@
+.search-state-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #64748b;
+  padding-left: 40px;
+  padding-right: 15px;
+  height: 42px;
+}
+
+.search-state-container:hover {
+  border: 1px solid #94a3b8;
+  background: #1f1f30;
+}
+
+.search-state-names {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #64748b;
+}
+
+.state-name-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1cd4d429;
+  border: none;
+  padding: 5px 6px;
+  border-radius: 3px;
+}
+
+.link-state-code-search {
+  color: #facc15;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,83 @@
+.state-route-state-cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+.stateCard-background {
+  width: 264px;
+  border-radius: 12px;
+  @media screen and (max-width: 768px) {
+    width: 148px;
+  }
+}
+
+.state-route-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Confirmed {
+  color: #ff073a;
+}
+
+.Active {
+  color: #007bff;
+}
+
+.Recovered {
+  color: #27a243;
+}
+
+.Deceased {
+  color: #6c757d;
+}
+
+.Confirmed:hover {
+  background: #331427;
+}
+
+.Active:hover {
+  background: #132240;
+}
+
+.Recovered:hover {
+  background: #182829;
+}
+
+.Deceased:hover {
+  background: #1c1c2b;
+}
+
+.title {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+  }
+}
+
+.state-districts-values {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+}
