@@ -9,8 +9,7 @@ const Footer = () => (
     <div className="footer-container">
       <Link to="/" className="link">
         <h1 className="header">
-          COVID19INDIA
-          {/* <span className="span-header">INDIA</span> */}
+          COVID19<span className="span-header">INDIA</span>
         </h1>
       </Link>
       <p className="footer-description">

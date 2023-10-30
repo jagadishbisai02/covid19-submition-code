@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom'
 import './stateList.css'
 
 const ListOfState = props => {
-  const {stateList} = props
+  const {stateList, key} = props
   const {
     stateCode,
     stateName,
@@ -17,7 +17,7 @@ const ListOfState = props => {
 
   return (
     <>
-      <li className="list-state-value">
+      <li className="list-state-value" key={key}>
         <Link to={`/state/${stateCode}`} className="link-class">
           <p className="state-names">{stateName}</p>
         </Link>

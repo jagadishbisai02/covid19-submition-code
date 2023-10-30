@@ -39,7 +39,7 @@ class About extends Component {
       <div className="about-page">
         <Header />
         {isLoading ? (
-          <div className="page-loader" testid="aboutRouteLoader">
+          <div className="page-loader" data-testid="aboutRouteLoader">
             <Loader type="Oval" color="#007bff" height={50} width={50} />
           </div>
         ) : (
@@ -49,7 +49,10 @@ class About extends Component {
             <p className="description">
               COVID-19 vaccines be ready for distribution
             </p>
-            <ul className="about-page-unorder-page" testid="faqsUnorderedList">
+            <ul
+              className="about-page-unorder-page"
+              data-testid="faqsUnorderedList"
+            >
               {aboutDetails.map(eachItem => (
                 <li key={eachItem.id}>
                   <p className="question">{eachItem.question}</p>

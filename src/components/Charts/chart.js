@@ -64,7 +64,7 @@ class Charts extends Component {
     const {chartsOther} = this.state
 
     return (
-      <div className="line-chart-container" testid="lineChartsContainer">
+      <div className="line-chart-container" data-testid="lineChartsContainer">
         <LineChart
           width={500}
           height={250}
@@ -92,7 +92,7 @@ class Charts extends Component {
   graphCharts = () => (
     <div className="charts-graphs-container">
       <h1 className="Charts-graph-heading">Daily Spread Trends</h1>
-      <div className="line-chart-graph" testid="lineChartsContainer">
+      <div className="line-chart-graph">
         <div className="charts-graph-list-margin confirmed-graph-background">
           {this.graphList('confirmed', '#ff073a')}
         </div>
@@ -131,7 +131,7 @@ class Charts extends Component {
     return (
       <>
         {isLoading ? (
-          <div className="page-loader" testid="timeLinesDataLoader">
+          <div className="page-loader" data-testid="timeLinesDataLoader">
             <Loader type="Oval" color="#007bff" height={50} width={50} />
           </div>
         ) : (

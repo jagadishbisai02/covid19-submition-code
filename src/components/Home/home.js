@@ -259,7 +259,10 @@ class Home extends Component {
   listOfSearch = () => {
     const {searchList} = this.state
     return (
-      <ul testid="searchResultsUnorderedList" className="search-state-lists">
+      <ul
+        data-testid="searchResultsUnorderedList"
+        className="search-state-lists"
+      >
         {searchList.map(each => (
           <SearchState
             stateName={each.state_name}
@@ -278,7 +281,7 @@ class Home extends Component {
     return (
       <div
         className="state-table-container-home-page"
-        testid="stateWiseCovidDataTable"
+        data-testid="stateWiseCovidDataTable"
       >
         <div className="state-table">
           <ul className="table-heading">
@@ -331,7 +334,7 @@ class Home extends Component {
         <div className="card-container">
           <ul
             className="country-wide-confirmed-cases"
-            testid="countryWideConfirmedCases"
+            data-testid="countryWideConfirmedCases"
           >
             <li>
               <p className="title">Confirmed</p>
@@ -348,7 +351,7 @@ class Home extends Component {
           </ul>
           <ul
             className="country-wide-active-cases"
-            testid="countryWideActiveCases"
+            data-testid="countryWideActiveCases"
           >
             <li>
               <p className="title">Active</p>
@@ -365,7 +368,7 @@ class Home extends Component {
           </ul>
           <ul
             className="country-wide-recovered-cases"
-            testid="countryWideRecoveredCases"
+            data-testid="countryWideRecoveredCases"
           >
             <li>
               <p className="title">Recovered</p>
@@ -382,7 +385,7 @@ class Home extends Component {
           </ul>
           <ul
             className="country-wide-deceased-cases"
-            testid="countryWideDeceasedCases"
+            data-testid="countryWideDeceasedCases"
           >
             <li>
               <p className="title">Deceased</p>
@@ -410,7 +413,7 @@ class Home extends Component {
         <div className="home-container">
           <Header />
           {isLoading ? (
-            <div className="page-loader" testid="homeRouteLoader">
+            <div className="page-loader" data-testid="homeRouteLoader">
               <Loader type="Oval" color="#007bff" height={50} width={50} />
             </div>
           ) : (

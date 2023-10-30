@@ -295,7 +295,10 @@ class StateRoute extends Component {
         </div>
         <div className="top-state-district">
           <h1 className="top-district-header">Top Districts</h1>
-          <ul className="top-districts-unordered-list">
+          <ul
+            className="top-districts-unordered-list"
+            data-testid="topDistrictsUnorderedList"
+          >
             {topDistricts.map(eachItem => (
               <TopDistricts
                 topDistrictsNumber={eachItem.districtValue}
@@ -305,10 +308,7 @@ class StateRoute extends Component {
             ))}
           </ul>
         </div>
-        <div
-          className="state-route-chart-container"
-          data-testid="timelinesDataLoader"
-        >
+        <div className="state-route-chart-container">
           <Charts districtsChart={category} districtCode={stateCodes} />
         </div>
       </div>
