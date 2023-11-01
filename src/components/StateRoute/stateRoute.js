@@ -184,7 +184,8 @@ class StateRoute extends Component {
     const response = await fetch(apiUrl, options)
     if (response.ok) {
       const data = await response.json()
-      if (stateCode !== undefined) {
+      console.log(data[stateCode])
+      if (data[stateCode] !== undefined) {
         const stateTested = data[stateCode].total.tested
         const isStateCode = statesList.filter(
           eachItem => eachItem.state_code === stateCode,
