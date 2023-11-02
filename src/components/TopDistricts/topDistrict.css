@@ -1,14 +1,17 @@
 .top-districts {
   height: auto;
-  width: 194px;
+  width: 289px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0px 3px;
+  @media screen and (max-width: 768px) {
+    width: 324px;
+  }
 }
 
 .top-district-number {
-  width: 69px;
+  width: 98px;
   font-family: Roboto;
   font-size: 24px;
   font-weight: 500;
@@ -18,7 +21,7 @@
   color: #94a3b8;
   padding-right: 5px;
   @media screen and (max-width: 768px) {
-    width: 46px;
+    width: 65px;
     font-size: 16px;
     line-height: 19px;
   }
