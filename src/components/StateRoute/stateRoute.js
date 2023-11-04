@@ -182,34 +182,29 @@ class StateRoute extends Component {
     const {stateCode} = params
 
     const response = await fetch(apiUrl, options)
-    try {
-      if (response.ok) {
-        const data = await response.json()
-        console.log(data[stateCode])
-        if (data[stateCode] !== undefined) {
-          const stateTested = data[stateCode].total.tested
-          const isStateCode = statesList.filter(
-            eachItem => eachItem.state_code === stateCode,
-          )
-          const totalStateData = data[stateCode].total
-          const stateName = isStateCode[0].state_name
-          const newDate = new Date(data[stateCode].meta.last_updated)
-          this.setState({
-            isLoading: false,
-            totalState: totalStateData,
-            listStateName: stateName,
-            localStoredData: data,
-            id: stateCode,
-            totalTested: stateTested,
-            stateDate: newDate,
-            stateCodes: stateCode,
-          })
-        } else {
-          console.log('undefined')
-        }
+    if (response.ok) {
+      const data = await response.json()
+      const isStateCode = statesList.filter(
+        eachItem => eachItem.state_code === stateCode,
+      )
+      if (isStateCode === true) {
+        const stateTested = data[stateCode].total.tested
+        const totalStateData = data[stateCode].total
+        const stateName = isStateCode[0].state_name
+        const newDate = new Date(data[stateCode].meta.last_updated)
+        this.setState({
+          isLoading: false,
+          totalState: totalStateData,
+          listStateName: stateName,
+          localStoredData: data,
+          id: stateCode,
+          totalTested: stateTested,
+          stateDate: newDate,
+          stateCodes: stateCode,
+        })
+      } else {
+        console.log(TypeError)
       }
-    } catch (error) {
-      console.log(error)
     }
   }
 
