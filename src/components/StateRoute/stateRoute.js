@@ -187,7 +187,7 @@ class StateRoute extends Component {
       const isStateCode = statesList.filter(
         eachItem => eachItem.state_code === stateCode,
       )
-      if (isStateCode === true) {
+      if (isStateCode) {
         const stateTested = data[stateCode].total.tested
         const totalStateData = data[stateCode].total
         const stateName = isStateCode[0].state_name
@@ -274,7 +274,7 @@ class StateRoute extends Component {
     ]
 
     return (
-      <div className="state-district-details">
+      <div className="state-district-details" data-testid="lineChartsContainer">
         <div className="state-route-state-names">
           <div className="date-container">
             <div className="state-district-header-container">
@@ -312,7 +312,10 @@ class StateRoute extends Component {
             ))}
           </ul>
         </div>
-        <div className="state-route-chart-container">
+        <div
+          className="state-route-chart-container"
+          data-testid="lineChartsContainer"
+        >
           <Charts districtsChart={category} districtCode={stateCodes} />
         </div>
       </div>
