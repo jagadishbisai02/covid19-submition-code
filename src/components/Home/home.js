@@ -259,10 +259,7 @@ class Home extends Component {
   listOfSearch = () => {
     const {searchList} = this.state
     return (
-      <ul
-        data-testid="searchResultsUnorderedList"
-        className="search-state-lists"
-      >
+      <ul testid="searchResultsUnorderedList" className="search-state-lists">
         {searchList.map(each => (
           <SearchState
             stateName={each.state_name}
@@ -281,7 +278,7 @@ class Home extends Component {
     return (
       <div
         className="state-table-container-home-page"
-        data-testid="stateWiseCovidDataTable"
+        testid="stateWiseCovidDataTable"
       >
         <div className="state-table">
           <ul className="table-heading">
@@ -289,7 +286,7 @@ class Home extends Component {
               <p className="heading">States/UT</p>
               <button
                 type="button"
-                data-testid="ascendingSort"
+                testid="ascendingSort"
                 className="sorting-btn"
                 onClick={this.ascSort}
               >
@@ -297,7 +294,7 @@ class Home extends Component {
               </button>
               <button
                 type="button"
-                data-testid="descendingSort"
+                testid="descendingSort"
                 className="sorting-btn"
                 onClick={this.descSort}
               >
@@ -331,76 +328,52 @@ class Home extends Component {
 
     return (
       <>
-        <div className="card-container">
-          <ul
+        <ul className="card-container">
+          <li
             className="country-wide-confirmed-cases"
-            data-testid="countryWideConfirmedCases"
+            testid="countryWideConfirmedCases"
           >
-            <li>
-              <p className="title">Confirmed</p>
-            </li>
-            <li>
-              <img
-                src="https://res.cloudinary.com/df5wssoz1/image/upload/v1696820101/samples/Covid19/check-mark_1_r4m79y.png"
-                alt="country wide confirmed cases pic"
-              />
-            </li>
-            <li>
-              <p className="counter">{totalConfirmed}</p>
-            </li>
-          </ul>
-          <ul
+            <p className="title">Confirmed</p>
+            <img
+              src="https://res.cloudinary.com/df5wssoz1/image/upload/v1696820101/samples/Covid19/check-mark_1_r4m79y.png"
+              alt="country wide confirmed cases pic"
+            />
+            <p className="counter">{totalConfirmed}</p>
+          </li>
+          <li
             className="country-wide-active-cases"
-            data-testid="countryWideActiveCases"
+            testid="countryWideActiveCases"
           >
-            <li>
-              <p className="title">Active</p>
-            </li>
-            <li>
-              <img
-                src="https://res.cloudinary.com/df5wssoz1/image/upload/v1696820101/samples/Covid19/protection_1_vzyvni.png"
-                alt="country wide active cases pic"
-              />
-            </li>
-            <li>
-              <p className="counter">{totalActive}</p>
-            </li>
-          </ul>
-          <ul
+            <p className="title">Active</p>
+            <img
+              src="https://res.cloudinary.com/df5wssoz1/image/upload/v1696820101/samples/Covid19/protection_1_vzyvni.png"
+              alt="country wide active cases pic"
+            />
+            <p className="counter">{totalActive}</p>
+          </li>
+          <li
             className="country-wide-recovered-cases"
-            data-testid="countryWideRecoveredCases"
+            testid="countryWideRecoveredCases"
           >
-            <li>
-              <p className="title">Recovered</p>
-            </li>
-            <li>
-              <img
-                src="https://res.cloudinary.com/df5wssoz1/image/upload/v1696820101/samples/Covid19/recovered_1_jg6qzy.png"
-                alt="country wide recovered cases pic"
-              />
-            </li>
-            <li>
-              <p className="counter">{totalRecovered}</p>
-            </li>
-          </ul>
-          <ul
+            <p className="title">Recovered</p>
+            <img
+              src="https://res.cloudinary.com/df5wssoz1/image/upload/v1696820101/samples/Covid19/recovered_1_jg6qzy.png"
+              alt="country wide recovered cases pic"
+            />
+            <p className="counter">{totalRecovered}</p>
+          </li>
+          <li
             className="country-wide-deceased-cases"
-            data-testid="countryWideDeceasedCases"
+            testid="countryWideDeceasedCases"
           >
-            <li>
-              <p className="title">Deceased</p>
-            </li>
-            <li>
-              <img
-                src="https://res.cloudinary.com/df5wssoz1/image/upload/v1696820101/samples/Covid19/breathing_1_g6ixah.png"
-                alt="country wide deceased cases pic"
-              />
-            </li>
-            <li>
-              <p>{totalDeceased}</p>
-            </li>
-          </ul>
-        </div>
+            <p className="title">Deceased</p>
+            <img
+              src="https://res.cloudinary.com/df5wssoz1/image/upload/v1696820101/samples/Covid19/breathing_1_g6ixah.png"
+              alt="country wide deceased cases pic"
+            />
+            <p>{totalDeceased}</p>
+          </li>
+        </ul>
       </>
     )
   }
@@ -413,7 +386,7 @@ class Home extends Component {
         <div className="home-container">
           <Header />
           {isLoading ? (
-            <div className="page-loader" data-testid="homeRouteLoader">
+            <div className="page-loader" testid="homeRouteLoader">
               <Loader type="Oval" color="#007bff" height={50} width={50} />
             </div>
           ) : (

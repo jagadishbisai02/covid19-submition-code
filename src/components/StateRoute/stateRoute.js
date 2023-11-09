@@ -187,7 +187,7 @@ class StateRoute extends Component {
       const isStateCode = statesList.filter(
         eachItem => eachItem.state_code === stateCode,
       )
-      if (isStateCode) {
+      if (isStateCode.length > 0) {
         const stateTested = data[stateCode].total.tested
         const totalStateData = data[stateCode].total
         const stateName = isStateCode[0].state_name
@@ -203,7 +203,7 @@ class StateRoute extends Component {
           stateCodes: stateCode,
         })
       } else {
-        console.log(TypeError)
+        console.log(isStateCode[0].state_name)
       }
     }
   }
@@ -274,7 +274,7 @@ class StateRoute extends Component {
     ]
 
     return (
-      <div className="state-district-details" data-testid="lineChartsContainer">
+      <div className="state-district-details">
         <div className="state-route-state-names">
           <div className="date-container">
             <div className="state-district-header-container">
@@ -301,7 +301,7 @@ class StateRoute extends Component {
           <h1 className="top-district-header">Top Districts</h1>
           <ul
             className="top-districts-unordered-list"
-            data-testid="topDistrictsUnorderedList"
+            testid="topDistrictsUnorderedList"
           >
             {topDistricts.map(eachItem => (
               <TopDistricts
@@ -314,7 +314,7 @@ class StateRoute extends Component {
         </div>
         <div
           className="state-route-chart-container"
-          data-testid="lineChartsContainer"
+          testid="lineChartsContainer"
         >
           <Charts districtsChart={category} districtCode={stateCodes} />
         </div>
@@ -329,7 +329,7 @@ class StateRoute extends Component {
         <Header />
         <div className="state-container-district">
           {isLoading ? (
-            <div className="page-loader" data-testid="stateDetailsLoader">
+            <div className="page-loader" testid="stateDetailsLoader">
               <Loader type="Oval" color="#007bff" height={50} width={50} />
             </div>
           ) : (

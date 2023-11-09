@@ -65,6 +65,7 @@
 
 /* card-styles */
 .card-container {
+  list-style-type: none;
   max-width: 979px;
   max-height: 142px;
   display: flex;
@@ -83,7 +84,6 @@
   justify-content: center;
   align-items: center;
   width: 132px;
-  list-style-type: none;
   margin: 15px;
   color: #ff073a;
 }

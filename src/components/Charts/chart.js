@@ -64,7 +64,7 @@ class Charts extends Component {
     const {chartsOther} = this.state
 
     return (
-      <div className="line-chart-container" data-testid="lineChartsContainer">
+      <div className="line-chart-container" testid="lineChartsContainer">
         <LineChart
           width={500}
           height={250}
@@ -131,7 +131,7 @@ class Charts extends Component {
     return (
       <>
         {isLoading ? (
-          <div className="page-loader" data-testid="timeLinesDataLoader">
+          <div className="page-loader" testid="timeLinesDataLoader">
             <Loader type="Oval" color="#007bff" height={50} width={50} />
           </div>
         ) : (

@@ -7,11 +7,11 @@ import './footer.css'
 const Footer = () => (
   <>
     <div className="footer-container">
-      <Link to="/" className="link">
-        <h1 className="header">
+      <p className="header">
+        <Link to="/" className="link">
           COVID19<span className="span-header">INDIA</span>
-        </h1>
-      </Link>
+        </Link>
+      </p>
       <p className="footer-description">
         we stand with everyone fighting on the front lines
       </p>

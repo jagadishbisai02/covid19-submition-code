@@ -6,6 +6,6 @@ import Adapter from '@wojtekmaj/enzyme-adapter-react-17'
 
 import {configure} from '@testing-library/react'
 
-configure({testIdAttribute: 'data-testid'})
+configure({testIdAttribute: 'testid'})
 
 eConfigure({adapter: new Adapter()})

@@ -12,7 +12,7 @@ const NotFound = () => (
       we are sorry, the page you requested could not be found
     </p>
     <button type="button" className="home-btn">
-      <Link to="/state/:stateCode" className="link-btn">
+      <Link to="/state/AN" className="link-btn">
         Home
       </Link>
     </button>
