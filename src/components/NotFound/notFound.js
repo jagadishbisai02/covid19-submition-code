@@ -11,11 +11,12 @@ const NotFound = () => (
     <p className="not-found-desc">
       we are sorry, the page you requested could not be found
     </p>
-    <button type="button" className="home-btn">
-      <Link to="/state/AN" className="link-btn">
+
+    <Link to="/" className="link-btn">
+      <button type="button" className="home-btn">
         Home
-      </Link>
-    </button>
+      </button>
+    </Link>
   </div>
 )
 export default NotFound
