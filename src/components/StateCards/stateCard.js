@@ -76,7 +76,7 @@ class StateCards extends Component {
         >
           <div
             className="state-route-cards"
-            testid="stateSpecificConfirmedCaseContainer"
+            testid="stateSpecificConfirmedCasesContainer"
           >
             <p className="title">{confirmedCard.name}</p>
             <img
@@ -95,7 +95,7 @@ class StateCards extends Component {
         >
           <div
             className="state-route-cards"
-            testid="stateSpecificActiveCaseContainer"
+            testid="stateSpecificActiveCasesContainer"
           >
             <p className="title">{activeCard.name}</p>
             <img src={activeCard.logo} alt="state specific active cases pic" />
@@ -111,7 +111,7 @@ class StateCards extends Component {
         >
           <div
             className="state-route-cards"
-            testid="stateSpecificRecoveredCaseContainer"
+            testid="stateSpecificRecoveredCasesContainer"
           >
             <p className="title">{recoveredCard.name}</p>
             <img
@@ -130,7 +130,7 @@ class StateCards extends Component {
         >
           <div
             className="state-route-cards"
-            testid="stateSpecificDeceasedCaseContainer"
+            testid="stateSpecificDeceasedCasesContainer"
           >
             <p className="title">{deceasedCard.name}</p>
             <img

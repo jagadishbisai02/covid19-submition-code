@@ -329,49 +329,57 @@ class Home extends Component {
     return (
       <>
         <ul className="card-container">
-          <li
-            className="country-wide-confirmed-cases"
-            testid="countryWideConfirmedCases"
-          >
-            <p className="title">Confirmed</p>
-            <img
-              src="https://res.cloudinary.com/df5wssoz1/image/upload/v1696820101/samples/Covid19/check-mark_1_r4m79y.png"
-              alt="country wide confirmed cases pic"
-            />
-            <p className="counter">{totalConfirmed}</p>
+          <li>
+            <div
+              className="country-wide-confirmed-cases"
+              testid="countryWideConfirmedCases"
+            >
+              <p className="title">Confirmed</p>
+              <img
+                src="https://res.cloudinary.com/df5wssoz1/image/upload/v1696820101/samples/Covid19/check-mark_1_r4m79y.png"
+                alt="country wide confirmed cases pic"
+              />
+              <p className="counter">{totalConfirmed}</p>
+            </div>
           </li>
-          <li
-            className="country-wide-active-cases"
-            testid="countryWideActiveCases"
-          >
-            <p className="title">Active</p>
-            <img
-              src="https://res.cloudinary.com/df5wssoz1/image/upload/v1696820101/samples/Covid19/protection_1_vzyvni.png"
-              alt="country wide active cases pic"
-            />
-            <p className="counter">{totalActive}</p>
+          <li>
+            <div
+              className="country-wide-active-cases"
+              testid="countryWideActiveCases"
+            >
+              <p className="title">Active</p>
+              <img
+                src="https://res.cloudinary.com/df5wssoz1/image/upload/v1696820101/samples/Covid19/protection_1_vzyvni.png"
+                alt="country wide active cases pic"
+              />
+              <p className="counter">{totalActive}</p>
+            </div>
           </li>
-          <li
-            className="country-wide-recovered-cases"
-            testid="countryWideRecoveredCases"
-          >
-            <p className="title">Recovered</p>
-            <img
-              src="https://res.cloudinary.com/df5wssoz1/image/upload/v1696820101/samples/Covid19/recovered_1_jg6qzy.png"
-              alt="country wide recovered cases pic"
-            />
-            <p className="counter">{totalRecovered}</p>
+          <li>
+            <div
+              className="country-wide-recovered-cases"
+              testid="countryWideRecoveredCases"
+            >
+              <p className="title">Recovered</p>
+              <img
+                src="https://res.cloudinary.com/df5wssoz1/image/upload/v1696820101/samples/Covid19/recovered_1_jg6qzy.png"
+                alt="country wide recovered cases pic"
+              />
+              <p className="counter">{totalRecovered}</p>
+            </div>
           </li>
-          <li
-            className="country-wide-deceased-cases"
-            testid="countryWideDeceasedCases"
-          >
-            <p className="title">Deceased</p>
-            <img
-              src="https://res.cloudinary.com/df5wssoz1/image/upload/v1696820101/samples/Covid19/breathing_1_g6ixah.png"
-              alt="country wide deceased cases pic"
-            />
-            <p>{totalDeceased}</p>
+          <li>
+            <div
+              className="country-wide-deceased-cases"
+              testid="countryWideDeceasedCases"
+            >
+              <p className="title">Deceased</p>
+              <img
+                src="https://res.cloudinary.com/df5wssoz1/image/upload/v1696820101/samples/Covid19/breathing_1_g6ixah.png"
+                alt="country wide deceased cases pic"
+              />
+              <p>{totalDeceased}</p>
+            </div>
           </li>
         </ul>
       </>
