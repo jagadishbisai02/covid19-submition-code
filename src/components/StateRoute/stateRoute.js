@@ -173,14 +173,13 @@ class StateRoute extends Component {
   }
 
   districtData = async () => {
-    const apiUrl = 'https://apis.ccbp.in/covid19-state-wise-data'
-    const options = {
-      method: 'GET',
-    }
     const {match} = this.props
     const {params} = match
     const {stateCode} = params
-
+    const apiUrl = `https://apis.ccbp.in/covid19-state-wise-data`
+    const options = {
+      method: 'GET',
+    }
     const response = await fetch(apiUrl, options)
     if (response.ok) {
       const data = await response.json()

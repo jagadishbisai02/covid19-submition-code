@@ -9,11 +9,11 @@ const SearchState = props => {
     <>
       <li className="search-state-container">
         <p className="search-state-names">{stateName}</p>
-        <button type="button" className="state-name-btn">
-          <Link to={`/state/${stateCode}`} className="link-state-code-search">
+        <Link to={`/state/${stateCode}`} className="link-state-code-search">
+          <button type="button" className="state-name-btn">
             {stateCode} <BiChevronRightSquare size={18} />
-          </Link>
-        </button>
+          </button>
+        </Link>
       </li>
     </>
   )

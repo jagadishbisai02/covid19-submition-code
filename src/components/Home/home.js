@@ -281,8 +281,8 @@ class Home extends Component {
         testid="stateWiseCovidDataTable"
       >
         <div className="state-table">
-          <ul className="table-heading">
-            <li className="state-sorted">
+          <div className="table-heading">
+            <p className="state-sorted">
               <p className="heading">States/UT</p>
               <button
                 type="button"
@@ -300,13 +300,13 @@ class Home extends Component {
               >
                 <FcGenericSortingDesc />
               </button>
-            </li>
-            <li className="heading">Confirmed</li>
-            <li className="heading">Active</li>
-            <li className="heading">Recovered</li>
-            <li className="heading">Deceased</li>
-            <li className="heading">Population</li>
-          </ul>
+            </p>
+            <p className="heading">Confirmed</p>
+            <p className="heading">Active</p>
+            <p className="heading">Recovered</p>
+            <p className="heading">Deceased</p>
+            <p className="heading">Population</p>
+          </div>
           <hr className="horizontal-line" />
           <ul className="state-result-data">
             {listOfCovidStateData.map(each => (
